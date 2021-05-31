@@ -4,6 +4,8 @@
   "description": "Biblioteca JS com TDD",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "prepush": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/andre-luis-violin/js-tdd/issues"
   },
-  "homepage": "https://github.com/andre-luis-violin/js-tdd#readme"
+  "homepage": "https://github.com/andre-luis-violin/js-tdd#readme",
+  "devDependencies": {
+    "eslint": "^7.27.0",
+    "husky": "^6.0.0"
+  }
 }
